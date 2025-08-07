@@ -1,0 +1,60 @@
+The following text is OCR output from a scanned National Insurance Institute form.
+
+Please extract the following fields from the text and return a single JSON object **exactly** in the structure shown below. 
+- If a field is not present, leave it as an empty string.
+- Do not infer or guess missing values.
+- Use the exact structure and key names, including nesting.
+
+Target JSON structure:
+{{
+  "lastName": "",
+  "firstName": "",
+  "idNumber": "",
+  "gender": "",
+  "dateOfBirth": {{
+    "day": "",
+    "month": "",
+    "year": ""
+  }},
+  "address": {{
+    "street": "",
+    "houseNumber": "",
+    "entrance": "",
+    "apartment": "",
+    "city": "",
+    "postalCode": "",
+    "poBox": ""
+  }},
+  "landlinePhone": "",
+  "mobilePhone": "",
+  "jobType": "",
+  "dateOfInjury": {{
+    "day": "",
+    "month": "",
+    "year": ""
+  }},
+  "timeOfInjury": "",
+  "accidentLocation": "",
+  "accidentAddress": "",
+  "accidentDescription": "",
+  "injuredBodyPart": "",
+  "signature": "",
+  "formFillingDate": {{
+    "day": "",
+    "month": "",
+    "year": ""
+  }},
+  "formReceiptDateAtClinic": {{
+    "day": "",
+    "month": "",
+    "year": ""
+  }},
+  "medicalInstitutionFields": {{
+    "healthFundMember": "",
+    "natureOfAccident": "",
+    "medicalDiagnoses": ""
+  }}
+}}
+
+OCR Text:
+{text}
