@@ -10,7 +10,6 @@ env/
 .vscode/
 
 .env
-.env.*
 !.env.example
 
 .streamlit/
