@@ -8,17 +8,8 @@ This repository contains two separate applications:
 Both apps are containerized and can be run together with a single Docker command.
 
 ---
-## 1. Clone the Repository
 
-First, clone this repository and navigate to it:
-
-```bash
-git clone https://github.com/danielmaor0808/azure-ai-automation.git
-cd azure-ai-automation
-```
-
-
-## 2. How to Run
+## 1. How to Run
 
 Make sure you have Docker installed and running. Then, from the project root:
 
@@ -34,7 +25,7 @@ docker run --env-file .env -p 8501:8501 -p 8000:8000 -p 7861:7860 kpmg-assignmen
 | Medical Chatbot (FastAPI backend)  | [http://localhost:8000/docs](http://localhost:8000/docs) | API docs for the chatbot backend            |
 | Medical Chatbot (Gradio frontend)  | [http://localhost:7861](http://localhost:7861)       | Chat UI for interacting with the bot        |
 
-## 3. Notes on Insurance Extraction
+## 2. Notes on Insurance Extraction
 
 - **Accuracy:** *86.6%* – Calculated as the ratio of correctly extracted fields to total fields across the evaluation dataset.
 
@@ -43,12 +34,12 @@ docker run --env-file .env -p 8501:8501 -p 8000:8000 -p 7861:7860 kpmg-assignmen
   accuracy = (number_of_correct_extractions / total_number_of_fields) * 100
 ```
 
-## 4. Notes on Medical Chatbot
+## 3. Notes on Medical Chatbot
 
 - To start the conversation, **the user should first say "hello" (or a similar greeting)** without providing personal details yet.
 - The chatbot will then guide the user through information collection before answering queries.
 
-## 5. Environment Variables
+## Environment Variables
 
 The applications require the following environment variables to be set in a `.env` file at the project root:
 
